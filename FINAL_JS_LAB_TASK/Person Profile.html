@@ -1,124 +1,151 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home Page</title>
-
-    <link rel="stylesheet" href="../css/admin.css">
+    <title>page 8</title>
 </head>
 <body>
-
-<form>
-<table>
-<!-- Name: -->
-<tr><td>Name: </td><td><input type="text" id="Name" ></td></tr>
-
-<!-- Email -->
-<tr><td>Email: </td><td><input type="text" id="Email"></td></tr>
-
-<!--Degree-->
-<p>Please select your degree:</p>
-            <input type="checkbox" name="ssc" id="ssc"> SSC
-            <input type="checkbox" name="hsc" id="hsc"> HSC
-            <input type="checkbox" name="bsc" id="bsc"> BSc
-            <br>
-            <input type="submit" value="Submit">
-    
-    function Degree() {
-        if (document.getElementById("ssc").checked || document.getElementById("hsc").checked || document.getElementById("bsc").checked) {
-            return true;
-        } else {
-            alert("At least one of them has to be selected");
-            return false;
-        }
-    }
-</script>
-<!-- Gender -->
-<p>Please select your gender:</p>
-  <input type="radio" id="male" name="gender" value="male">
-  <label for="male">Male</label><br>
-  <input type="radio" id="female" name="gender" value="female">
-  <label for="female">Female</label><br>
-  <input type="radio" id="other" name="gender" value="other">
-  <label for="other">Other</label>
-<br>
-<br>
-<table><!-- Birthday -->
-<tr><td>
-<label for="Birthday">Date of Birth</label><input type="date" id="date" name="date">
-</td></tr>
-
-<tr>
-                    <td>Profile Picture: </td>
-                    <td> <input type="file" name="profilePicture" id="profilePicture"></td>
-                </tr>
-
-<br>
-
-<tr><td>
-<input type="submit" value="submit" onclick="myFunction()">
-<script>
-    function myFunction() {
-
-      var name=document.getElementById("Name").value;
-        if (name==null || name==""){  
-        alert("Name can't be blank");   
-        }
+    <table border="1" width="100%">
+        <tr>
+            <td colspan="3" align="center"><b>PERSONAL PROFILE</b></td>
+        </tr>
+        <tr>
+            <td>Name</td>
+            <td><input id="name" type="text" name="name" value=""></td><br><br>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Email</td>
+            <td><input id="email" type="email" name="email" value=""></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Gender</td>
+            <td>
+                <input id="gender_Male" type="radio" name="radio" value="male">Male
+                <input id="gender_Female" type="radio" name="radio" value="Female">Female
+                <input id="gender_Other" type="radio" name="radio" value="Other">Other</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Date of Birth</td>
+            <td ><input id="dob" type="text" name=" 1" value="" size="1">/<input id="dob"type="text" name="" size="2">/<input id="dob" type="text" name="" size="3"> <i>(dd/mm/yyyy</i>
+                </td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Degree</td>
+            <td><input id="SSC" type="checkbox" name=" checkbox" value="">SSC
+                <input id="HSC" type="checkbox" name=" checkbox" value="">HSC
+                <input id="BSc." type="checkbox" name=" checkbox" value="">BSc.
+                <input id="MSc." type="checkbox" name=" checkbox" value="">MSc. </td>
+                <td></td>
+        </tr>
+        <tr>
+            <td>Photo</td>
+            <td><input type="button" name="browse" value="Browse"> No file selected</td>
+        </tr>
+        <tr>
+            <td colspan="3" height="20px"></td>
+        </tr>
+        <tr>
+            <td colspan="3" align="right"><input type="submit" onclick="getName()"Submit>
+                <input type="reset" name="" value="Reset"></td>
+        </tr>
+    </table>
 
 
+    <script>
+        "use strict"
 
-        //email
 
-          
-             var email=document.getElementById("Email").value;
+            function getName(){
+            let name = document.getElementById('name').value;
 
-            if (/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/.test(email))
-            {
-                alert("Valid email");  
+            if(name != ''){
+                
+                getemail();
+                checkButton();
+                
+                alert('done');
+                
+            }else{
+                alert('null value');
             }
-            else
-                alert("You have entered an invalid email address!")
-
-
-
-        // Radio button
-
-
-     
-          var male=document.getElementById("male").value;var female=document.getElementById("female").value;var other = document.getElementById("other").value;
-
-
-
-                if(male.checked==false && female.checked==false && other.checked==false )
-                {
-                        alert("You must select male or female");
-                }   
-           
-        //Date
-                date = document.getElementById("date").value;
-                if(date == "")
-                alert("select the date")
-
-        }
-    //profilePicture
-                profilePicture = document.getElementById("profilePicture").value;
-                if(profilePicture == "")
-                alert("seelect jpg/png file")
-
+            
         }
 
-</script>
-</td>
-<br>
 
-<tr><td><input type="reset" value="reset"></td></tr>
 
-</table>
+        function getemail(){
+            let email = document.getElementById('email').value;
 
-</form>
+            if(email != ''){
+                
+                
+                
+            }else{
+                alert('null value');
+            }
+            
+        }
 
+
+        function checkButton()  
+            {
+            if(document.getElementById('gender_Male').checked) {
+             //Male radio button is checked
+            }else if(document.getElementById('gender_Female').checked) {
+              //Female radio button is checked
+            }
+            else if(document.getElementById('gender_Other').checked){
+
+            }
+            else{
+                alert("please select");
+            }
+            }
+
+
+
+            function DOB()){
+            let email = document.getElementById('dob').value;
+
+            if(dob != ''){
+                
+                
+                
+            }else{
+                alert('null value');
+            }
+            
+        }
+
+                function checkBox()  
+            {
+            if(document.getElementById('SSC').checked) {
+             //Male radio button is checked
+            }else if(document.getElementById('HSC').checked) {
+              //Female radio button is checked
+            }
+            else if(document.getElementById('BSc.').checked){
+
+            }
+            else if(document.getElementById('MSc.').checked){
+
+            }
+            else{
+                alert("please select");
+            }
+            }
+
+
+
+
+
+
+
+
+    </script>
 
 </body>
 </html>
