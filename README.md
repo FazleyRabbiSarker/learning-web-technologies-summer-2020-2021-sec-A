@@ -1,8 +1,7 @@
 <h1 align="center">Hi 👋, I'm Fazley Rabbi Sarker (FRS)</h1>
 <h3 align="center">A passionate frontend developer, QA Engineer & UI/UX Designer from Bangladesh.</h3>
 2017265%2F&tbnid=35X6L1D39_KDvM&vet=12ahUKEwjon5G_jpj9AhUWzHMBHYMXB0AQMygWegUIARCuAg..i&docid=h2ihlHFmCU5f1M&w=500&h=500&q=cartoon%20animated%20coding%20gif&hl=en&ved=2ahUKEwjon5G_jpj9AhUWzHMBHYMXB0AQMygWegUIARCuAg
-img align="right" alt="coading" width="420"sre="https://www.google.com/imgres?imgurl=https%3A%2F%2Fi.pinimg.com%2Foriginals%2Fe8%2Ff4%2F53%2Fe8f453469a3ec97ecd354df465d73913.gif&imgrefurl=https%3A%2F%2Fwww.pinterest.com%2Fpin%2F5981350129"
-
+img align="right" alt="coading" width="420"sre="https://www.google.com/url?sa=i&url=https%3A%2F%2Fgist.github.com%2FMedRedha%2Ffd8e2481bde2610c96b9aafde543879c&psig=AOvVaw0E377x8Ayz3_pKRRgKlp3G&ust=1676570644952000&source=images&cd=vfe&ved=0CA8QjRxqFwoTCLDVrMSOmP0CFQAAAAAdAAAAABAF
 <p align="left"> <img src="https://komarev.com/ghpvc/?username=fazleyrabbi123&label=Profile%20views&color=0e75b6&style=flat" alt="fazleyrabbi123" /> </p>
 
 <p align="left"> <a href="https://github.com/ryo-ma/github-profile-trophy"><img src="https://github-profile-trophy.vercel.app/?username=fazleyrabbi123" alt="fazleyrabbi123" /></a> </p>
